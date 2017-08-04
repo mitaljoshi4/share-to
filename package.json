@@ -1,0 +1,14 @@
+{
+  "name": "shareto",
+  "version": "0.0.1",
+  "description": "shareto plugin",
+  "cordova": {
+    "id": "shareto",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "mital joshi",
+  "license": "ISC"
+}
