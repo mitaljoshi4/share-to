@@ -29,15 +29,15 @@ cordova.plugins.shareto.shared(success, failure);
 
 
 ```javaScript
-        var success = function (imgString) {
-            // Set base64 Image string to your image container
-        }
+var success = function (imgString) {
+        // Set base64 Image string to your image container
+}
 
-        var failure = function (e) {
-            //Handle Error
-        }
+var failure = function (e) {
+        //Handle Error
+}
 
-        cordova.plugins.shareto.shared(success, failure);
+cordova.plugins.shareto.shared(success, failure);
 ```
 
 ### For Multiple shared images
@@ -46,23 +46,22 @@ For Multiple shared images, shared() returns Array of base64 Image Strings.
 
 #### Example to get Multiple Image Strings: 
 ```javaScript
-        var success = function (imageString) {
-            //check if imageString is array.
-            if (Array.isArray(imageString)) {
+var success = function (imageString) {
+        //check if imageString is array.
+        if (Array.isArray(imageString)) {
                 for (var i = 0; i < imageString.length ; i++) {
-                    // set image
+                        // set image
                 }
-            }
-            else {
+        }
+        else {
                 //set image
-            }
         }
+}
+var failure = function (e) {
+        //Handle error
+}
 
-        var failure = function (e) {
-            //Handle error
-        }
-
-        cordova.plugins.shareto.shared(success, failure);
+cordova.plugins.shareto.shared(success, failure);
 ```
 ### Note
 The image is passed to the success callback as a Base64-encoded String.
